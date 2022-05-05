@@ -1,10 +1,6 @@
-First things first: check out the live preview [here](https://piggame-by-al.netlify.app/) and have lots of fun. Preferably with a friend 😉. If you need it, please check out also the instructions at the **bottom of this file**.
+First things first: check out the live preview [here](https://alpalma95.github.io/pigGame/).
 
 This project has been made while taking the JavaScript course by Jonas Schmedtmann **The Complete JavaScript Course 2022: From Zero to Expert!**. This is actually a recreation of the second project of the course. **Nonetheless**, instead of adding here his UI, I decided I wanted to challenge myself. So I created this simple UI from scratch and coded the JavaScript all by myself <s>(and a bit of help from StackOverflow...)</s>.
-
-Most importantly: I had **FUN** while building this, but also learnt a lot. Please take a look at it and don't hesitate to drop your feedback. You can find me on Twitter as **@Al_ElMolinillo**. My biggest takeaway would be the importance of using arrays and the possibility they give you to not hard code the algorithm and to not have unnecessary almost identical variables round there. Would you agree? 😀
-
-Thanks a lot for your time, dear reader. Stay happy and safe!
 
 ---
 
