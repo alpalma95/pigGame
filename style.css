@@ -1,0 +1,147 @@
+:root {
+  --shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.07),
+    6.7px 6.7px 5.3px rgba(0, 0, 0, 0.05),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.042),
+    22.3px 22.3px 17.9px rgba(0, 0, 0, 0.035),
+    41.8px 41.8px 33.4px rgba(0, 0, 0, 0.028),
+    100px 100px 80px rgba(0, 0, 0, 0.02);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+body {
+  line-height: 1.3;
+  font-size: 1.7rem;
+  background: rgb(121, 71, 9);
+  background-image: linear-gradient(
+    90deg,
+    rgba(148, 57, 16, 1) 29%,
+    rgba(161, 40, 46, 1) 100%
+  );
+  height: 100vh;
+}
+
+.name {
+  background-color: peachpuff;
+  width: 30rem;
+  margin: 0 auto;
+  border-radius: 20px;
+  position: relative;
+  top: -50px;
+  box-shadow: var(--shadow);
+}
+
+.container {
+  width: min(90%, 45rem);
+  height: 40rem;
+  margin: 5% auto;
+  background-color: rgba(216, 111, 146, 0.5);
+  box-shadow: var(--shadow);
+  border-radius: 30px;
+  padding: 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+h2 {
+  margin-top: 2rem;
+}
+
+span {
+  color: peachpuff;
+  font-weight: 900;
+  font-size: 3rem;
+}
+
+p > span {
+  font-size: 2.3rem;
+}
+
+.dice {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  top: 200px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border: 2px solid rgb(31, 30, 30, 0.5);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.score--current {
+  font-weight: 700;
+}
+
+button {
+  margin-top: 5rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+  border: 2px solid peachpuff;
+  color: peachpuff;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+#roll-btn {
+  background-color: peachpuff;
+  color: black;
+}
+
+.active {
+  background-color: rgba(212, 137, 162, 0.5);
+  transition: 0.7s;
+}
+
+.inactive {
+  opacity: 0.5;
+}
+.hidden {
+  display: none;
+}
+
+@media (max-width: 40rem) {
+  .name {
+    position: static;
+    width: auto;
+  }
+  body {
+    font-size: 1rem;
+  }
+  button {
+    transform: scale(0.9);
+    margin-top: 1rem;
+    padding: 1rem;
+    margin-top: 0.2rem;
+  }
+  .dice {
+    width: 4rem;
+    height: 4rem;
+  }
+}
